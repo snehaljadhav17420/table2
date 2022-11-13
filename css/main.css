@@ -1,0 +1,44 @@
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column1 {
+  float: left;
+  width: 10%;
+  padding: 10px;
+  height: 80px; 
+}
+.column2 {
+    float: left;
+    width: 90%;
+    padding: 10px;
+    height: 80px; 
+  }
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+table, th, td {
+    border:1px solid black;
+    border-collapse: collapse;
+  }
+  table{
+    margin: 10px;
+    padding: 10px
+  }
+  th,td{
+    padding: 20px;
+  }
+  th{
+   color: white;
+   background-image: linear-gradient(177deg, #dfdfdf, #464646);
+  }
+  tr:nth-child(odd) {
+    background-color: #dddddd;
+  }
+  
